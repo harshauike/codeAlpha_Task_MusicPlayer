@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="player">
+        <h1>🎵 Music Player</h1>
+
+        <div class="album">🎧</div>
+
+        <h2 id="title">Summer Vibes</h2>
+        <p id="artist">Artist One</p>
+
+        <audio id="audio"></audio>
+
+        <div class="progress-container">
+            <input type="range" id="progress"
+                   value="0" min="0" max="100">
+            <div class="time">
+                <span id="currentTime">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev" title="Previous">⏮</button>
+            <button id="play" class="play-btn"
+                    title="Play">▶</button>
+            <button id="next" title="Next">⏭</button>
+        </div>
+
+        <div class="volume">
+            <label for="volume">🔊 Volume</label>
+            <input type="range" id="volume"
+                   min="0" max="1" step="0.01" value="0.7">
+            <span id="volumeValue">70%</span>
+        </div>
+
+        <label class="autoplay">
+            <input type="checkbox" id="autoplay" checked>
+            Autoplay next song
+        </label>
+
+        <h3>My Playlist</h3>
+        <ul id="playlist"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

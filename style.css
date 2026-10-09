@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.player {
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    text-align: center;
+    background: #10182b;
+    border: 1px solid #34415d;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px #0005;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 22px;
+}
+
+.album {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 65px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #a855f7, #4f46e5);
+}
+
+h2 {
+    margin-top: 18px;
+    font-size: 22px;
+}
+
+#artist {
+    color: #b8c5df;
+    margin-top: 8px;
+}
+
+.progress-container {
+    margin-top: 25px;
+}
+
+input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+    accent-color: #a855f7;
+}
+
+.time {
+    display: flex;
+    justify-content: space-between;
+    color: #b8c5df;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.play-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #a855f7, #6d28d9);
+}
+
+.volume {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.volume input {
+    flex: 1;
+    min-width: 30px;
+}
+
+#volumeValue {
+    width: 35px;
+}
+
+.autoplay {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+.autoplay input {
+    accent-color: #a855f7;
+    vertical-align: middle;
+}
+
+h3 {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#playlist {
+    list-style: none;
+    text-align: left;
+}
+
+#playlist li {
+    padding: 12px;
+    margin-top: 5px;
+    background: #1c2740;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#playlist li:hover,
+#playlist li.active {
+    background: #493078;
+}
+
+@media (max-width: 400px) {
+    .player {
+        padding: 18px;
+    }
+}
