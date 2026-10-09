@@ -19,17 +19,17 @@ const songs = [
     {
         title: "Red Yellow",
         artist: "Unknown Band",
-        src: "songs/English_Song_-_Red_Yellow.mp3"
+        src: "English_Song_-_Red_Yellow.mp3"
     },
     {
         title: "Mad English",
         artist: "Robert Art",
-        src: "songs/Mad_English_Song.mp3"
+        src: "Mad_English_Song.mp3"
     },
     {
         title: "Miles More",
         artist: "Rony Spain",
-        src: "songs/Miles_More_-_English.mp3"
+        src: "Miles_More_-_English.mp3"
     }
 ];
 
